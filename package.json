@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongodb": "^6.19.0",
+    "mongoose": "^8.18.0",
+    "node": "^20.19.5",
+    "nodemon": "^3.1.10"
+  },
+  "name": "api_movies",
+  "version": "1.0.0",
+  "description": "Reposório da API Movies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ViniSouzaCosta/API_movies.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ViniSouzaCosta/API_movies/issues"
+  },
+  "homepage": "https://github.com/ViniSouzaCosta/API_movies#readme"
+}
