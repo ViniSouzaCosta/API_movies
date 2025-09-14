@@ -13,8 +13,8 @@ const getAllMovies = async (req, res) => {
 
 const createMovie = async (req, res) => {
     try{
-        const { title,year,genre,rating} = req.body;
-        await movieService.Create(title,year,genre,rating);
+        const { title,year,rating,descriptions} = req.body;
+        await movieService.Create(title,year,rating,descriptions);
         res.sendStatus(201);
     }catch(error){
         console.log(error);
@@ -41,8 +41,8 @@ const updateMovie = async (req, res) => {
     try{
         if (ObjectId.isValid(req.params.id)){
             const id = req.params.id;
-            const {title,year,genre,rating} = req.body;
-            const movie = await movieService.Update(id,title,year,genre,rating);
+            const {title,year,rating,descriptions} = req.body;
+            const movie = await movieService.Update(id,title,year,rating,descriptions);
             res.status(200).json({movie});
         }else{
             res.sendStatus(400);

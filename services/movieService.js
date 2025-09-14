@@ -9,14 +9,14 @@ class movieService {
             console.log(error);
         }
     }
-    async Create(title,year,genre,rating){
+    async Create(title,year,rating,descriptions){
         try{
             const newMovie = new Movie({
                 title,
                 year,
-                genre,
-                rating
-            })
+                rating,
+                descriptions,
+            });
             await newMovie.save()
         }catch(error){
             console.log(error)
@@ -30,15 +30,15 @@ class movieService {
             console.log(error)
         }
     }
-    async Update(id,title,year,genre,rating){
+    async Update(id,title,year,rating,descriptions){
         try{
             const updateMovie = await Movie.findByIdAndUpdate(
                 id,
                 {
                     title,
                     year,
-                    genre,
                     rating,
+                    descriptions,
                 },
                 { new: true}
             );
