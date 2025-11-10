@@ -6,7 +6,7 @@ export default function Home() {
   const [movies, setMovies] = useState([]);
   const [error, setError] = useState(null);
 
-  // URL da sua API (ajuste conforme porta da API)
+
   const API_URL = 'http://localhost:3001/movies';
 
   useEffect(() => {
