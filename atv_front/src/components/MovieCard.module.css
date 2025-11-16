@@ -1,0 +1,49 @@
+/* src/components/MovieCard.module.css (FINAL) */
+
+.card {
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  transition: transform 0.3s;
+  flex-basis: 30%; 
+  min-width: 250px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.title { 
+  color: #c0392b; 
+  font-size: 1.6em;
+  margin-bottom: 5px;
+}
+
+.rating {
+    font-weight: bold;
+    color: #f39c12; /* Cor amarela para o rating */
+    margin-bottom: 10px;
+}
+
+.details {
+    border-top: 1px dashed #ccc;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.details strong, .synopses strong {
+    color: #34495e;
+}
+
+.synopses {
+    font-size: 0.9em;
+    line-height: 1.4;
+    color: #555;
+}
+
+/* Você deve ter um estilo .movieGrid em src/styles/Home.module.css */
