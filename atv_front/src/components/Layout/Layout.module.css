@@ -5,23 +5,12 @@
   padding: 40px 20px;
   min-height: 100vh;
   position: relative;
-  
   background-color: #0d1117; 
   background-image: url('/images/bg-pattern.jpg'); 
   background-size: cover;
 }
 
-.decorativeImage {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 600px; 
-    height: auto;
-    opacity: 0.15; 
-    z-index: 0;
-    pointer-events: none; 
-}
+
 
 .pageTitle { 
   color: #ffffff; 
@@ -32,14 +21,14 @@
   z-index: 1; 
 }
 
-.movieGrid {
+.contentWrapper {
   display: flex;
   flex-direction: column; 
   align-items: center;
   padding: 30px;
   width: 95%;
   max-width: 800px;
-  
+
   background: rgba(18, 26, 34, 0.8); 
   border-radius: 12px;
   border: 1px solid rgba(0, 180, 255, 0.2); 

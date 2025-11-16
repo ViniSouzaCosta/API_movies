@@ -1,11 +1,14 @@
 import express from "express";
+import cors from 'cors';
 const app = express();
+
 import mongoose from './config/db-connection.js';
 // mongoose.connect("mongodb://127.0.0.1:27017/api_movies");
 import Movie from "./models/Movies.js";
 import movieRoutes from "./routers/movieRoutes.js";
 
-
+app.use(cors());
+app.use(express.json());
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
